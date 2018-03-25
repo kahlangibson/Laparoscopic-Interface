@@ -51,7 +51,7 @@ namespace cam_aforge1
         {
             if (isclicked)
             {
-                Circle cir2 = new Circle(Color.Red, 1, xval, yval, 2);
+                Circle cir2 = new Circle(Color.Blue, 1, xval, yval, 2);
                 cir2.isFill = true;
                 dots.Add(cir2);
                 for (int i = 0; i < dots.Count; i++)
