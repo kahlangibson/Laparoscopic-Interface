@@ -59,6 +59,9 @@ namespace cam_aforge1
             this.viewFinder.TabStop = false;
             this.viewFinder.Click += new System.EventHandler(this.viewFinder_Click);
             this.viewFinder.MouseDown += new System.Windows.Forms.MouseEventHandler(this.viewFinder_FindClick);
+            this.viewFinder.MouseMove += new System.Windows.Forms.MouseEventHandler(this.viewFinder_TrackClick);
+            this.viewFinder.MouseUp += new System.Windows.Forms.MouseEventHandler(this.viewFinder_EndClick);
+            //this.viewFinder.DragDrop
             // 
             // vidSrc
             // 

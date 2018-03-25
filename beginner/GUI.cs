@@ -161,5 +161,14 @@ namespace cam_aforge1
         {
             myCanvas.UpdatePosition(e.X, e.Y);
         }
+        private void viewFinder_TrackClick(object sender, MouseEventArgs e)
+        {
+            myCanvas.MouseIsMoving(e.X, e.Y);
+        }
+        private void viewFinder_EndClick(object sender, MouseEventArgs e)
+        {
+            myCanvas.MouseReleased(e.X, e.Y);
+        }
+
     }
 }
