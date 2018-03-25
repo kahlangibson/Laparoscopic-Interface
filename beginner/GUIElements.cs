@@ -160,7 +160,9 @@ namespace cam_aforge1
         public void ButtonWasClicked()
         {
             //Step 8 on GUI.cs will enable this code
-            counter++;
+            //counter++;
+            dots = new List<Circle>();
+            isclicked = false;
         }
 
         public void UpdatePosition(int x, int y)

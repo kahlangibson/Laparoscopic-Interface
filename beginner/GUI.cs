@@ -140,8 +140,8 @@ namespace cam_aforge1
         {
             //Step 7: Let's activate this button. Uncomment lines 143-144 to add functionality
             //to the button.
-            tickCount++;
-            countDisp.Text = tickCount.ToString();
+            //tickCount++;
+            //countDisp.Text = tickCount.ToString();
 
             //Step 8: The button_Click method can be used to call a method that you wrote
             //on the GUIElements Class. Uncomment line 149 to call the ButtonWasClicked method

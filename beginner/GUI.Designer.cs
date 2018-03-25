@@ -40,6 +40,7 @@ namespace cam_aforge1
             this.ctrl = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.countLabel = new System.Windows.Forms.Label();
+            this.InstructionLabel = new System.Windows.Forms.Label();
             this.countDisp = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.viewFinder)).BeginInit();
             this.fps.SuspendLayout();
@@ -61,7 +62,6 @@ namespace cam_aforge1
             this.viewFinder.MouseDown += new System.Windows.Forms.MouseEventHandler(this.viewFinder_FindClick);
             this.viewFinder.MouseMove += new System.Windows.Forms.MouseEventHandler(this.viewFinder_TrackClick);
             this.viewFinder.MouseUp += new System.Windows.Forms.MouseEventHandler(this.viewFinder_EndClick);
-            //this.viewFinder.DragDrop
             // 
             // vidSrc
             // 
@@ -140,19 +140,29 @@ namespace cam_aforge1
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(73, 35);
             this.button3.TabIndex = 10;
-            this.button3.Text = "Tick";
+            this.button3.Text = "Clear";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // InstructionLabel
+            // 
+            this.InstructionLabel.AutoSize = true;
+            this.InstructionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InstructionLabel.Location = new System.Drawing.Point(22, 275);
+            this.InstructionLabel.Name = "InstructionLabel";
+            this.InstructionLabel.Size = new System.Drawing.Size(87, 12);
+            this.InstructionLabel.TabIndex = 10;
+            this.InstructionLabel.Text = "INSTRUCTIONS";
             // 
             // countLabel
             // 
             this.countLabel.AutoSize = true;
-            this.countLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.countLabel.Location = new System.Drawing.Point(22, 239);
+            this.countLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.countLabel.Location = new System.Drawing.Point(22, 290);
             this.countLabel.Name = "countLabel";
-            this.countLabel.Size = new System.Drawing.Size(75, 25);
-            this.countLabel.TabIndex = 11;
-            this.countLabel.Text = "Count:";
+            this.countLabel.Size = new System.Drawing.Size(150, 24);
+            this.countLabel.TabIndex = 10;
+            this.countLabel.Text = "Click and drag to outline the Ureter. \nPress clear to clear the screen.";
             // 
             // countDisp
             // 
@@ -160,9 +170,8 @@ namespace cam_aforge1
             this.countDisp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.countDisp.Location = new System.Drawing.Point(96, 239);
             this.countDisp.Name = "countDisp";
-            this.countDisp.Size = new System.Drawing.Size(24, 25);
+            this.countDisp.Size = new System.Drawing.Size(0, 25);
             this.countDisp.TabIndex = 12;
-            this.countDisp.Text = "0";
             // 
             // GUI
             // 
@@ -170,6 +179,7 @@ namespace cam_aforge1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 497);
             this.Controls.Add(this.countDisp);
+            this.Controls.Add(this.InstructionLabel);
             this.Controls.Add(this.countLabel);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.ctrl);
@@ -202,6 +212,7 @@ namespace cam_aforge1
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button ctrl;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label InstructionLabel;
         private System.Windows.Forms.Label countLabel;
         private System.Windows.Forms.Label countDisp;
     }
